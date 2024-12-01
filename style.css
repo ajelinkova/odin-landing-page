@@ -133,3 +133,30 @@ header {
     text-align: center;
     font-size: 18px;
 }
+
+/* Quote section */
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 96px 500px; 
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.quote_text {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quote_author {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 26px;
+}
+
+/* Action section */
