@@ -20,11 +20,11 @@ header {
     flex-direction: column;
 }
 
-.navigation, .hero {
+.navigation, .hero, .footer {
     background-color: #1F2937;
 }
 
-.hero_title, .logo, .sign_up {
+.hero_title, .logo, .sign_up, .action_button {
     color: #F9FAF8; 
 }
 
@@ -50,7 +50,7 @@ header {
     font-weight: 900;
 }
 
-.hero_subtext, .header_links a, .hero_img {
+.hero_subtext, .header_links a, .hero_img, .action_text {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -80,7 +80,7 @@ header {
     flex: 1;
 }
 
-.sign_up {
+.sign_up, .action_button {
     background-color: #3882F6;
     padding: 10px 40px;
     margin-top: 15px; 
@@ -139,11 +139,14 @@ header {
 .quote {
     background-color: #E5E7EB;
     display: flex;
-    flex-direction: column;
-    padding: 96px 500px; 
+    padding: 96px 100px; 
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.quote_wrapper {
+    max-width: 800px;
 }
 
 .quote_text {
@@ -155,8 +158,50 @@ header {
 
 .quote_author {
     font-weight: bold;
-    align-self: flex-end;
+    text-align: right;
     font-size: 26px;
 }
 
 /* Action section */
+
+.action_button {
+    border: 2px solid white;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 200px;
+}
+
+.action_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 40px 100px;
+    border-radius: 12px;
+}
+
+.action_button_side {
+    flex-shrink: 0;
+}
+
+.action_title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Footer section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+    color: white;
+    font-size: 18px;
+}
